@@ -92,8 +92,8 @@ public class Prodotto {
 				+ "nome:" + " " + getNome() + "\n"
 				+ "nome esteso:" + " " + getNomeEsteso() + "\n"
 				+ "descrizione:" + " " + getDescrizione() + "\n"
-				+ "prezzo:" + " " + getPrezzo() + "euro" + "\n"
-				+ "prezzo con iva:" + " " + getPrezzoIva() + "euro" + "\n"
+				+ "prezzo:" + " " + String.format("%.2f", getPrezzo()) + " " + "€" + "\n"
+				+ "prezzo con iva:" + " " + String.format("%.2f", getPrezzoIva())+ " " + "€" + "\n"
 				+ "iva:" + " " + getIva() + "%\n"
 				+ "codice:" + " " + getCodicePadding() + "\n";
 		
